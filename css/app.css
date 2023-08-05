@@ -1,0 +1,143 @@
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs .page-header {
+    padding: 140px 0 80px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .breadcrumbs nav {
+    background-color: #f3f6fc;
+    padding: 20px 0;
+  }
+  
+  .breadcrumbs nav ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-secondary);
+  }
+  
+  .breadcrumbs nav ol a {
+    color: var(--primary);
+    transition: 0.3s;
+  }
+  
+  .breadcrumbs nav ol a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs nav ol li+li {
+    padding-left: 10px;
+  }
+  
+  .breadcrumbs nav ol li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #4278cc;
+    content: "/";
+  }
+
+/* landing */
+@media(max-width:700px){
+    .landing-img{
+        height: 25vh;
+    }
+}
+
+
+/*** Carousel ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(9, 30, 62, .7);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.hero{
+  margin-bottom: 0px;
+} 
+
+.app-disc p{
+  line-height: 2;
+}
+.youtube-btn{
+  background: #F44336;
+  box-shadow: inset 0 0 0 50px #F44336;
+  display: none;
+}
+.youtube-btn.show{
+  display: inline-block;
+}
+.youtube-btn:hover {
+  color: #F44336;
+  box-shadow: inset 0 0 0 0  #F44336;
+  border-color:  #F44336;
+}
+.view-webSite{
+  display: none;
+}
+.view-webSite.show{
+  display: inline-block;
+}
+
+.app-logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px var(--mainColor) solid;
+  margin-bottom: 20px;
+}
+.app-logo img{
+  max-width:100px;
+  margin: 0px 10px;
+}
+.app-logo .app-name{
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+
+.slider-img{
+  margin: auto;
+  height: 400px;
+}
+
+.prev-next-icon{
+  background-color: var(--mainColor);
+}
