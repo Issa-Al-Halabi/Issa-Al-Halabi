@@ -11,6 +11,10 @@
     };
     loader();
     
+
+    setTimeout(function () {
+            $('#loader').removeClass('show');
+    }, 5);
     
     // Initiate the wowjs
     new WOW().init();
