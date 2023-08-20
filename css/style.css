@@ -275,11 +275,13 @@ a:focus {
         font-size: 29px;
     }
 }
+
 @media (max-width: 350px) {
     .navbar .navbar-brand {
         font-size: 25px;
     }
 }
+
 @media (max-width: 310px) {
     .navbar .navbar-brand {
         font-size: 22px;
@@ -321,27 +323,30 @@ a:focus {
     border: 4px solid var(--mainColor);
     padding: 0px;
     outline: 20px solid white;
-    animation: hero-img-animation 3s linear 0s infinite ;
+    animation: hero-img-animation 3s linear 0s infinite;
 }
 
 @keyframes hero-img-animation {
-    0%{
+    0% {
         border: 4px solid var(--mainColor);
     }
-    50%{
+
+    50% {
         border: 4px solid white;
     }
-    100%{
+
+    100% {
         border: 4px solid var(--mainColor);
     }
 }
 
 .hero .hero-image .img {
-    background-image: url(../img/issa3.png);
+    background-image: url(../img/issa.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 110%;
     height: 110%;
+    transform: translate(-20px, 0);
 }
 
 .hero .hero-content {
@@ -432,6 +437,7 @@ a:focus {
         padding: 12px 30px;
         letter-spacing: 1px;
     }
+
     .hero .hero-image {
         transform: translate(-50%, 35%);
     }
@@ -500,6 +506,7 @@ a:focus {
         letter-spacing: 0;
     }
 }
+
 @media (max-width: 500px) {
     .hero .hero-image {
         transform: translate(-50%, 35%);
@@ -512,6 +519,7 @@ a:focus {
     .hero .container-fluid {
         padding: 0px 0 100px;
     }
+
     .hero .hero-image {
         transform: translate(-50%, 65%);
         width: 200px;
@@ -976,16 +984,20 @@ a:focus {
 }
 
 @media (max-width: 370px) {
+
     .experience .timeline .timeline-item.left .timeline-date,
-     .experience .timeline .timeline-item.right .timeline-date {
+    .experience .timeline .timeline-item.right .timeline-date {
         font-size: 14px;
     }
+
     .experience .timeline .timeline-text h2 {
         font-size: 20px;
     }
+
     .experience .timeline .timeline-text h4 {
         font-size: 14px;
     }
+
     .experience .timeline .timeline-text p {
         font-size: 12px;
     }
@@ -1079,6 +1091,7 @@ a:focus {
         width: 130px;
         min-height: 130px;
     }
+
     .service .service-text {
         padding: 0 20px;
     }
@@ -1097,9 +1110,11 @@ a:focus {
         width: 120px;
         min-height: 120px;
     }
+
     .service .service-text {
         padding: 0 10px;
     }
+
     .service .service-text h3 {
         font-size: 13px;
     }
@@ -1126,6 +1141,7 @@ a:focus {
     column-gap: 20px;
     row-gap: 20px;
 }
+
 @media (max-width: 769px) {
     .certificates .certificate-grid {
         grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -1139,11 +1155,13 @@ a:focus {
     align-items: center;
     padding: 10px;
     border: transparent solid 1px;
+    box-shadow: 0px 0px 6px 0px #eee;
     transition: .3s;
 }
 
 .certificates .certificate-item:hover {
     border-color: var(--mainColor);
+    box-shadow: 0px 0px 0px 0px #eee;
     transform: scale(1.05);
 }
 
@@ -1153,9 +1171,6 @@ a:focus {
 
 }
 
-.certificates .certificate-header {}
-
-.certificates .certificate-text {}
 
 .certificates .btn {
     color: white;
@@ -1165,6 +1180,77 @@ a:focus {
     color: var(--mainColor);
 }
 
+.certificates .certificate-grid-page {
+    display: flex;
+    border-left: 2px solid var(--mainColor);
+    flex-direction: column;
+    margin: auto;
+    max-width: 900px;
+}
+
+.certificates .certificate-item-page {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 10px 10px 10px 25px;
+    transition: .3s;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.certificates .certificate-item-page::before {
+    content: "";
+    min-width: 12px;
+    min-height: 12px;
+    background-color: white;
+    border: 2px solid var(--mainColor);
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    left: -6.5px;
+}
+
+.certificates .certificate-header-page {}
+
+.certificates .certificate-text-page {
+    text-align: left;
+}
+
+@media(max-width: 575.98px) {
+    .certificates .certificate-item-page {
+        column-gap: 10px;
+    }
+
+    .certificates .certificate-header-page {
+        font-size: calc(1rem + .3vw);
+    }
+
+    .certificates .certificate-text-page {
+        font-size: 0.8rem;
+    }
+
+    .certificates .certificate-item-page a.btn {
+        padding: 10px 15px;
+    }
+}
+
+@media(max-width: 370.98px) {
+    .certificates .certificate-item-page {
+        padding: 10px 0px 10px 10px;
+    }
+    .certificates .certificate-header-page {
+        font-size: calc(0.8rem + .3vw);
+    }
+
+    .certificates .certificate-text-page {
+        font-size: 0.7rem;
+    }
+
+    .certificates .certificate-item-page a.btn {
+        padding: 6px 10px;
+    }
+}
 
 /*******************************/
 /******** Portfolio CSS ********/
@@ -1405,6 +1491,7 @@ a:focus {
         font-size: 12px;
         line-height: 16px;
     }
+
     .team .team-social a.btn {
         width: 25px;
         height: 25px;
@@ -1416,17 +1503,21 @@ a:focus {
     .team .team-item {
         flex-direction: column;
     }
+
     .team .team-text {
         width: 90%;
         padding-bottom: 10px;
     }
+
     .team .team-text h2 {
         font-size: 18px;
         margin-top: 10px;
     }
+
     .team .team-text h4 {
         font-size: 12px;
     }
+
     .team .team-social a.btn {
         width: 35px;
         height: 35px;
@@ -1464,6 +1555,7 @@ a:focus {
     margin: 0 15px;
     text-align: center;
 }
+
 .owl-carousel .owl-stage {
     display: flex;
     align-items: center;
@@ -1583,6 +1675,7 @@ a:focus {
     display: flex;
     justify-content: center;
 }
+
 .footer .footer-menu p {
     color: #ffffff;
     font-size: 22px;
@@ -1591,14 +1684,16 @@ a:focus {
     padding: 0 15px;
     border-right: 1px solid #ffffff;
 }
+
 @media(max-width: 400px) {
     .footer .footer-menu {
         flex-direction: column;
     }
+
     .footer .footer-menu p {
         border-right: none;
     }
-    
+
 }
 
 

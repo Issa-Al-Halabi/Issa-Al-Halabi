@@ -1,20 +1,20 @@
 (function ($) {
     "use strict";
     
-    // loader
-    var loader = function () {
-        setTimeout(function () {
-            if ($('#loader').length > 0) {
-                $('#loader').removeClass('show');
-            }
-        }, 1);
-    };
-    loader();
+    // // loader
+    // var loader = function () {
+    //     setTimeout(function () {
+    //         if ($('#loader').length > 0) {
+    //             $('#loader').removeClass('show');
+    //         }
+    //     }, 1);
+    // };
+    // loader();
     
 
-    setTimeout(function () {
-            $('#loader').removeClass('show');
-    }, 5);
+    // setTimeout(function () {
+    //         $('#loader').removeClass('show');
+    // }, 5);
     
     // Initiate the wowjs
     new WOW().init();

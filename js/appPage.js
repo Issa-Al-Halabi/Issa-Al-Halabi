@@ -70,7 +70,8 @@
 
 
     function navigateToAppPage(appName){
+
         sessionStorage.setItem("app",JSON.stringify(apps[appName]));
-        console.log(apps[appName]);
+
         window.location.href = "app.html";
     }

@@ -4,8 +4,9 @@ let data ;
 
 function getDataOnLoad(){
     data =JSON.parse(sessionStorage.getItem("app"));
+    lang =  localStorage.getItem("currLang")??"en";
     if(data == null ){
-        // window.location.href ="index.html";
+        window.location.href ="index.html";
     }
     else{
 
@@ -20,11 +21,14 @@ function getDataOnLoad(){
         getLogoImage()
 
         // replace disc
-        let disc = document.querySelectorAll(".disc");
+        let disc = document.querySelector(".disc");
 
-        disc.forEach((element)=>{
-            getProjectData(element,"disc");
-        });
+            if(lang == "de"){
+                getProjectData(disc,"disc_de");
+            }
+            else{
+                getProjectData(disc,"disc");
+            }
 
         // replace all images
         createImage();

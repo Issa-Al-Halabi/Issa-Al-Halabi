@@ -1,15 +1,15 @@
-let currLang="en";
+
 let htmlTag = document.querySelector("html");
-htmlTag.lang = "en";
+htmlTag.lang = localStorage.getItem("currLang")??"en";
+if(htmlTag.lang !="en"){
+  changeLocalization();
+}
 
 function changeLocalization() {
   let mytexts = document.querySelectorAll(".localization");
-  console.log(mytexts);
 
   mytexts.forEach((text) => {
-    console.log(text.dataset["local"])
     let temp = text.childNodes[0].nodeValue; 
-    console.log(temp)
     text.childNodes[0].nodeValue  = text.dataset["local"];
     text.dataset["local"] = temp;
   });
@@ -20,9 +20,12 @@ let dropdownItems = document.querySelectorAll(".dropdown-menu .dropdown-item");
 
 dropdownItems.forEach((dropdownItem)=>{
   dropdownItem.onclick=()=>{
+
+    let currLang= localStorage.getItem("currLang")??"en";
+
     if(dropdownItem.dataset.lang != currLang){
-      currLang = dropdownItem.dataset.lang;
-      htmlTag.lang = currLang;
+      localStorage.setItem("currLang",dropdownItem.dataset.lang);
+      htmlTag.lang = dropdownItem.dataset.lang;
       changeLocalization();
     }
     
