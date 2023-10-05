@@ -1,4 +1,9 @@
-
+:root {
+  --githubColor: #171515;
+  --youtubeColor: #F44336;
+  --googlePlayColor: #4caf50;
+  --appStoreColor: #03A9F4;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -95,23 +100,66 @@
 .app-disc p{
   line-height: 2;
 }
+
+.github{
+  background: var(--githubColor);
+  box-shadow: inset 0 0 0 50px var(--githubColor);
+  display: none; 
+}
+.github:hover {
+  color: var(--githubColor);
+  box-shadow: inset 0 0 0 0  var(--githubColor);
+  border-color:  var(--githubColor);
+}
+.github.show{
+  display: inline-block;
+}
+
 .youtube-btn{
-  background: #F44336;
-  box-shadow: inset 0 0 0 50px #F44336;
+  background: var(--youtubeColor);
+  box-shadow: inset 0 0 0 50px var(--youtubeColor);
   display: none;
 }
 .youtube-btn.show{
   display: inline-block;
 }
 .youtube-btn:hover {
-  color: #F44336;
-  box-shadow: inset 0 0 0 0  #F44336;
-  border-color:  #F44336;
+  color: var(--youtubeColor);
+  box-shadow: inset 0 0 0 0  var(--youtubeColor);
+  border-color:  var(--youtubeColor);
 }
 .view-webSite{
   display: none;
 }
 .view-webSite.show{
+  display: inline-block;
+}
+
+.google-play{
+  background: var(--googlePlayColor);
+  box-shadow: inset 0 0 0 50px var(--googlePlayColor);
+  display: none; 
+}
+.google-play:hover {
+  color: var(--googlePlayColor);
+  box-shadow: inset 0 0 0 0  var(--googlePlayColor);
+  border-color:  var(--googlePlayColor);
+}
+.google-play.show{
+  display: inline-block;
+}
+
+.app-store{
+  background: var(--appStoreColor);
+  box-shadow: inset 0 0 0 50px var(--appStoreColor);
+  display: none; 
+}
+.app-store:hover {
+  color: var(--appStoreColor);
+  box-shadow: inset 0 0 0 0  var(--appStoreColor);
+  border-color:  var(--appStoreColor);
+}
+.app-store.show{
   display: inline-block;
 }
 

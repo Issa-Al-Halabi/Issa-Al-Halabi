@@ -1,5 +1,45 @@
      // navigate to app page
      let apps ={
+        "lordsbox" : 
+        {
+            "logo":"img/projects/lordsbox/logo.png",
+            "name":"lordsbox",
+            "disc":"I developed this application with Flutter and the backend with Laravel<br>The application is designed for a transport company in Germany and its function is:<br>- It monitors employees on a map so that the employer knows where his employees are, moment by moment (BackGround Service)<br>- It counts how many hours the employee works each day <br>Application features:<br>- Supported in Arabic and English<br>- The user can turn off his phone or log in to social media applications and the application still counts working hours<br> There is a control panel for the admin to monitor his employees and add and remove employees",
+            "disc_de":"Ich habe diese Anwendung mit Flutter und das Backend mit Laravel entwickelt Die Anwendung ist für ein Transportunternehmen in Deutschland konzipiert und hat folgende Funktion:<br> - Es überwacht die Mitarbeiter auf einer Karte, sodass der Arbeitgeber jederzeit weiß, wo sich seine Mitarbeiter befinden<br> - Es wird gezählt, wie viele Stunden der Mitarbeiter täglich arbeitet<br> Anwendungsmerkmale:<br> - Unterstützt auf Arabisch und Englisch<br> - Der Benutzer kann sein Telefon ausschalten oder sich bei Social-Media-Anwendungen anmelden und die Anwendung zählt weiterhin die Arbeitsstunden<br> Es gibt ein Kontrollpanel, über das der Administrator seine Mitarbeiter überwachen und Mitarbeiter hinzufügen und entfernen kann",
+            "images":["img/projects/lordsbox/1.jpg","img/projects/lordsbox/2.jpg","img/projects/lordsbox/3.jpg","img/projects/lordsbox/4.jpg","img/projects/lordsbox/5.jpg","img/projects/lordsbox/6.jpg",],
+            "buttons":[
+                {
+                "name":"github",
+                "class":"github",
+                "icon":"fa-brands fa-github",
+                "link":"https://github.com/Issa-Al-Halabi/LORDBOX"
+                },
+                {
+                "name":"youtube",
+                "class":"youtube-btn",
+                "icon":"fa-brands fa-youtube",
+                "link":"https://youtu.be/7pzpHwjhBJc?si=bjnZenKG2bV5Tghx"
+                },
+                {
+                "name":"view-webSite",
+                "class":"view-webSite",
+                "icon":"fa-solid fa-globe",
+                "link":"https://lordsbox.com/"
+                },
+                {
+                "name":"Google Play",
+                "class":"google-play",
+                "icon":"fa-brands fa-google-play",
+                "link":"https://play.google.com/store/apps/details?id=com.em.lordsbox"
+                },
+                {
+                "name":"App Store",
+                "class":"app-store",
+                "icon":"fa-brands fa-app-store-ios",
+                "link":"https://apps.apple.com/app/lordsbox/id6450722085?platform=iphone"
+                },
+            ],
+        },
         "pharmacy" : 
         {
             "logo":"img/projects/Pharmacy/logo.png",
@@ -7,8 +47,20 @@
             "disc":"Implemented by the Flutter framework <br>Application idea:<br>It is an application to order medicines online to facilitate the purchase process<br>This product has two versions<br>1 - User copy:<br>To provide the possibility of requesting medicines, communicating with the dealer,<br>and determining the amount of medicines needed<br>2 - Admin copy:<br>To provide the ability to manage medicines prices, delete them, and manage user's orders<br> App features:<br>- MVC architecture<br>- GETX Echo System<br>- Clean reusable code",
             "disc_de":"Implementiert durch das Flutter-Framework <br>Anwendungsidee:<br>Es ist für eine Anwendung zur Online-Bestellung von Medikamenten, um den Kaufvorgang zu erleichtern<br>Dieses Produkt hat zwei Versionen<br>1 - User Version:<br> Um die Möglichkeit zu bieten, Medikamente anzufordern,Kommunikation mit dem Händler,<br>und Bestimmung der Menge der benötigten Medikamente<br>2 - Admin version:<br>Um die Möglichkeit zur Verwaltung der Arzneimittelpreise zu bieten, und Sie zu löschen,und verwalt die Bestellungen des Benutzers<br> App-Funktionen:<br>-  GETX Echo-System<br>- wiederverwendbar Code",
             "images":["img/projects/Pharmacy/pharmacy1.jpg","img/projects/Pharmacy/pharmacy2.jpg","img/projects/Pharmacy/pharmacy3.jpg","img/projects/Pharmacy/pharmacy4.jpg","img/projects/Pharmacy/pharmacy5.jpg","img/projects/Pharmacy/pharmacy6.jpg",],
-            "github":"https://github.com/Issa-Al-Halabi/pharmacy",
-            "youtube":"https://youtu.be/OAi2qRQ1n-Y",
+            "buttons":[
+                {
+                "name":"github",
+                "class":"github",
+                "icon":"fa-brands fa-github",
+                "link":"https://github.com/Issa-Al-Halabi/pharmacy"
+                },
+                {
+                "name":"youtube",
+                "class":"youtube-btn",
+                "icon":"fa-brands fa-youtube",
+                "link":"https://youtu.be/OAi2qRQ1n-Y"
+                },
+            ],
         },
         "cables" : 
         {
@@ -19,6 +71,20 @@
             "images":["img/projects/cables/1.jpg","img/projects/cables/2.jpg","img/projects/cables/3.jpg","img/projects/cables/4.jpg","img/projects/cables/5.jpg",],
             "github":"https://github.com/Issa-Al-Halabi/Cabels",
             "youtube":"https://youtu.be/cNTNyDPZhc8",
+            "buttons":[
+                {
+                "name":"github",
+                "class":"github",
+                "icon":"fa-brands fa-github",
+                "link":"https://github.com/Issa-Al-Halabi/Cabels",
+                },
+                {
+                "name":"youtube",
+                "class":"youtube-btn",
+                "icon":"fa-brands fa-youtube",
+                "link":"https://youtu.be/cNTNyDPZhc8",
+                },
+            ],
         },
         "rada" : 
         {
@@ -27,8 +93,20 @@
             "disc":"Project using HTML, CSS, Javascript <br>It is for a cleaning company in Germany<br><br>  And it offers :<br><br>&nbsp; &nbsp;   • show the advantages of working with the company<br><br>&nbsp; &nbsp;   • show the company's services<br><br>&nbsp; &nbsp;   • Enabling the possibility of communication to request the service",
             "disc_de":"Projekt mit HTML, CSS, Javascript <br>Es ist für eine Reinigungsfirma in Deutschland<br><br> Und es bietet : <br><br>&nbsp; &nbsp;   • Zeigt die Vorteile einer Zusammenarbeit mit dem Unternehmen auf<br><br>&nbsp; &nbsp;   • Zeigt die Leistungen des Unternehmens auf<br><br>&nbsp; &nbsp;   • Ermöglichen der Möglichkeit der Kommunikation zur Anforderung des Dienstes",
             "images":["img/projects/rada/1.jpg","img/projects/rada/2.jpg","img/projects/rada/3.jpg"],
-            "github":"https://github.com/Issa-Al-Halabi/Rada-Cleaning",
-            "view-webSite":"https://issa-al-halabi.github.io/Rada-Cleaning/",
+            "buttons":[
+                {
+                "name":"github",
+                "class":"github",
+                "icon":"fa-brands fa-github",
+                "link":"https://github.com/Issa-Al-Halabi/Rada-Cleaning",
+                },
+                {
+                "name":"view-webSite",
+                "class":"view-webSite",
+                "icon":"fa-solid fa-globe",
+                "link":"https://issa-al-halabi.github.io/Rada-Cleaning/",
+                },
+            ],
         },
         "X-POSITRON" : 
         {
@@ -43,9 +121,26 @@
                         "img/projects/X-POSITRON/9.png","img/projects/X-POSITRON/10.png",
                         "img/projects/X-POSITRON/11.png",
                     ],
-            "github":"https://github.com/Issa-Al-Halabi/XPOSITRON_Flutter",
-            "youtube":"https://youtu.be/05hJa3gZr-w",
-            "view-webSite":"https://xpositron.000webhostapp.com/",
+                "buttons":[
+                    {
+                    "name":"github",
+                    "class":"github",
+                    "icon":"fa-brands fa-github",
+                    "link":"https://github.com/Issa-Al-Halabi/XPOSITRON_Flutter",
+                    },
+                    {
+                    "name":"youtube",
+                    "class":"youtube-btn",
+                    "icon":"fa-brands fa-youtube",
+                    "link":"https://youtu.be/05hJa3gZr-w",
+                    },
+                    {
+                    "name":"view-webSite",
+                    "class":"view-webSite",
+                    "icon":"fa-solid fa-globe",
+                    "link":"https://xpositron.000webhostapp.com/",
+                    },
+                ],
         },
         "interpolation" : 
         {
@@ -54,7 +149,14 @@
             "disc":"A project using Flutter My professor at the university asked me to create this app to help us understand his subject<br><br>&nbsp; &nbsp;It calculates the interpolation of any function according to the Newton - Gregory method<br><br>&nbsp; &nbsp;We give the application several points and it calculates the interpolation and draws the function",
             "disc_de":"Ein Projekt mit Flutter. Mein Professor an der Universität hat mich gebeten, diese App zu erstellen, um uns zu helfen, sein Fach zu verstehen<br><br>&nbsp; &nbsp; Es berechnet die Interpolation einer beliebigen Funktion nach der Newton-Gregory-Methode<br><br>&nbsp; &nbsp;Wir geben der Anwendung mehrere Punkte und sie berechnet die Interpolation und zeichnet die Funktion",
             "images":["img/projects/interpolation/1.jpg","img/projects/interpolation/2.jpg","img/projects/interpolation/3.jpg"],
-            "github":"https://github.com/Issa-Al-Halabi/interpolation",
+            "buttons":[
+                {
+                "name":"github",
+                "class":"github",
+                "icon":"fa-brands fa-github",
+                "link":"https://github.com/Issa-Al-Halabi/interpolation",
+                },
+            ],
         },
         "X_O Game" : 
         {
@@ -64,7 +166,14 @@
             "disc_de":"Das erste Projekt mit Flutter seit 2020, es ist ein einfaches Tic-Tac-Toe-Spiel,seine Vorteile:<br><br><br>&nbsp; &nbsp; • Sie können gegen einen Computer oder einen Menschen spielen<br><br>&nbsp; &nbsp; • Es gibt 3 Schwierigkeitsgrade <br><br>&nbsp; &nbsp; • Es gibt ein Berechnungssystem für Gewinn und Niederlage<br><br>&nbsp; &nbsp; • Sie können die Farben des Spiels vollständig ändern<br><br>&nbsp; &nbsp; • Es gibt ein einfaches Login-System",
             "images":["img/projects/X-O/1.jpg","img/projects/X-O/2.jpg","img/projects/X-O/3.jpg",
                      "img/projects/X-O/4.jpg","img/projects/X-O/5.jpg","img/projects/X-O/6.jpg",],
-            "github":"https://github.com/Issa-Al-Halabi/X_O-Game_Flutter",
+            "buttons":[
+                {
+                "name":"github",
+                "class":"github",
+                "icon":"fa-brands fa-github",
+                "link":"https://github.com/Issa-Al-Halabi/X_O-Game_Flutter",
+                },
+            ],
         },
      };
 

@@ -1007,6 +1007,63 @@ a:focus {
     text-align: center;
 }
 
+
+/*******************************/
+/********* company CSS *********/
+/*******************************/
+.companies .companies-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 55px;
+    padding: 40px 0;
+  }
+  
+  .companies .company-item{
+    position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(0,0,0,.125);
+      border-radius: 0.25rem;
+      padding: 10px 30px
+  }
+  .companies .company-item .company-img{
+    max-width: 100%;
+  }
+  .companies .company-item .company-title{
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: var(--mainColor);
+    font-weight: bold;
+  }
+  .companies .company-item .company-position{
+    margin-bottom: 0px;
+  }
+  
+  
+  .companies .company-item .company-small{
+    font-weight: 300;
+    color: #777;
+  }
+  .companies .company-item .company-text{
+    padding: 10px 0;
+  }
+  .companies .company-item .company-body .btn{
+    width: 100%;
+  }
+  .companies .company-item .company-body .btn:hover{
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor);
+  }
+  /* end Section: company */
+  
+
+
 /*******************************/
 /********* Service CSS *********/
 /*******************************/

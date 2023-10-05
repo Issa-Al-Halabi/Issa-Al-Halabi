@@ -33,14 +33,8 @@ function getDataOnLoad(){
         // replace all images
         createImage();
 
-        // get youtube link
-        youtube();
-
-        // get github link
-        github();
-
-        // get view WebSite link
-        viewWebSite();
+        // to  create all Buttons
+        createButtons();
     }
 
 
@@ -79,27 +73,17 @@ function createImage(){
 
 }
 
-function youtube(){
-    if(data["youtube"]){
-        let youtubeBtn = document.querySelector(".youtube-btn");
-        youtubeBtn.href = data["youtube"];
-        youtubeBtn.classList.add("show");
-    }
+function createButtons(){
+    let buttons = document.querySelector(".buttons");
+        console.log(data["buttons"].length);
+        let buttonsContent = "";
+        data["buttons"].forEach((btn)=>{
+            console.log(btn["name"]);
+            buttonsContent += `
+            <a href="${btn['link']}"
+            class="btn btn-primary py-3 px-5 mt-3 ${btn['class']} show wow zoomIn"
+            target="_blank"
+            data-wow-delay="0.9s">${btn['name']} <i class="${btn['icon']}"></i></a>`;
+    });
+    buttons.innerHTML = buttonsContent;
 }
-
-function github(){
-    let githubBtn = document.querySelector(".github");
-    githubBtn.href = data["github"];
-}
-function viewWebSite(){
-    if(data["view-webSite"]){
-        let webSiteLink = document.querySelector(".view-webSite");
-        webSiteLink.href = data["view-webSite"];
-        webSiteLink.classList.add("show");
-    }
-}
-
-
-
-
-

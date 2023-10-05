@@ -57,6 +57,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           <div class="navbar-nav ml-auto">
             <a href="#home" class="nav-item nav-link active localization" data-local="Haus">Home</a>
             <a href="#about" class="nav-item nav-link localization" data-local="über">About</a>
+            <a href="#companies" class="nav-item nav-link localization" data-local="UnterNahmen">Companies</a>
             <a href="#service" class="nav-item nav-link localization" data-local="Leistungen">Service</a>
             <a href="#experience" class="nav-item nav-link localization" data-local="Erfahrung">Experience</a>
             <a href="#portfolio" class="nav-item nav-link localization" data-local="Portfolio">Portfolio</a>
@@ -290,13 +291,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
               </div>
               <div class="skill-name">
                 <p>BootStrap</p>
-                <p>80%</p>
+                <p>95%</p>
               </div>
               <div class="progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  aria-valuenow="80"
+                  aria-valuenow="95"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -316,13 +317,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
               </div>
               <div class="skill-name">
                 <p>Laravel</p>
-                <p>70%</p>
+                <p>85%</p>
               </div>
               <div class="progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  aria-valuenow="70"
+                  aria-valuenow="85"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -352,28 +353,42 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <h4 class="certificate-header">
                   Front-End
                 </h4>
-                <p class="certificate-text localization" data-local="3 Zertifikate von Coursera">
-                 3 certificates from Coursera
+                <p class="certificate-text localization" data-local="9 Zertifikate von Coursera">
+                 9 certificates from Coursera
                 </p>
                 <div
                 class="btn localization" data-local="Schau mal" onclick="checkCertificate('Front-End')">view</div>
               </div>
               <!-- certificate-item -->
+
+              <div class="certificate-item wow slideInUp"
+              data-wow-delay="0.2s">
+                <h4 class="certificate-header">
+                  Back-End
+                </h4>
+                <p class="certificate-text localization" data-local="9 Zertifikate von Coursera">
+                 9 certificates from Coursera
+                </p>
+                <div
+                class="btn localization" data-local="Schau mal" onclick="checkCertificate('Back-End')">view</div>
+              </div>
+              <!-- certificate-item -->
+
               
               <div class="certificate-item wow slideInUp"
               data-wow-delay="0.3s">
                 <h4 class="certificate-header">
-                  FLUTTER
+                  Flutter
                 </h4>
-                <p class="certificate-text localization" data-local="Zertifikat von udemy">
-                   certificate from udemy
+                <p class="certificate-text localization" data-local="9 Zertifikate">
+                 9 certificates
                 </p>
-                <a 
-                href="https://www.udemy.com/certificate/UC-76192112-cbf3-4762-8775-7be58bd45f10/"
-               target="_blank"
-                class="btn localization" data-local="Schau mal">view</a>
+                <div
+                class="btn localization" data-local="Schau mal" onclick="checkCertificate('Flutter')">view</div>
               </div>
               <!-- certificate-item -->
+              
+            
     
               <div class="certificate-item wow slideInUp"
               data-wow-delay="0.4s">
@@ -411,6 +426,52 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         </div>
         <!-- Certificate End -->
 
+
+            <!-- companies section -->
+      <section class="site-section companies" id="companies">
+        <div class="container">
+          <div
+          class="section-header text-center wow zoomIn"
+          data-wow-delay="0.1s"
+        >
+          <p class="localization" data-local="Unternehmen, für die ich gearbeitet habe">Companies I Worked For</p>
+          <h2 class="localization" data-local="Meine Erfahrung">My Experience</h2>
+        </div>
+
+          <div class="companies-grid">
+            <!-- Start company item -->
+            <div class="company-item">
+              <img
+                class="company-img"
+                src="img/projects/cloudsZone/logo.png"
+                alt="Card image cap"
+              />
+              <div class="company-body">
+                <h5 class="company-title">CloudsZone</h5>
+                <p class="company-position">Flutter & Laravel Developer</p>
+                <small class="company-small">2022/4 - 2023/10</small>
+                <p class="company-text localization" data-local="
+                Cloud Zone ist ein Unternehmen für Softwareberatung
+                Sitz in Saudi-Arabien. Ich arbeite seit einem Jahr und halb für dieses Unternehmen
+                und Ich habe viel Erfahrung gesammelt, ich habe als
+                Flutter-Entwickler und Laravel-Entwickler gearbeitet, ich und
+                Das professionelle Team des Unternehmens entwickelte mobile Apps
+                mit Flutter und erstellen wir unsere eigene API mit Laravel">
+                  Cloud zone is a company for software consulting , it is
+                  located in saudi Arabia I have worked at this company for year
+                  and a half and collected a lot of experience, I worked as a
+                  Flutter Developer and Laravel Developer, me and the
+                  professional team of the company were developing mobile apps
+                  with Flutter and make our own API with Laravel
+                </p>
+                <a href="https://cloudszone.net/" class="btn btn-primary">Website</a>
+              </div>
+            </div>
+            <!-- end company item -->
+          </div>
+        </div>
+      </section>
+      <!-- End Company section -->
 
     <!-- Service Start -->
     <div class="service" id="service">
@@ -519,12 +580,34 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         </header>
         <div class="timeline">
 
+          <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+            <div class="timeline-text">
+              
+              <div class="timeline-date">2023 / 5</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/lordsbox/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title">
+                  <h2>Lordsbox </h2>
+                  <h4>Flutter Monitoring & Tracking System 2023 / 5</h4>
+                </div>
+              </div>
+                  <p class="localization" data-local="Ich habe ein App für ein Transportunternehmen erstellt">
+                    I Have Built An App For A Goods transportation company
+                  </p>
+            </div>
+          </div>
+
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2023 - 2024</div>
-              <h2>Flutter App</h2>
-              <h4>Pharmacy 2023 / 4</h4>
-              <p class="localization" data-local="Ich habe eine App für eine Lokale Apotheke erstellt">
+              <div class="timeline-date">2022 / 1</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/pharmacy/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title">
+                  <h2>Pharmacy</h2>
+                  <h4>Flutter App 2022 / 1</h4>
+                </div>
+              </div>
+              <p class="localization" data-local="Ich habe ein App für eine Lokale Apotheke erstellt">
                 I Have Built An App For A Local Pharmacy
               </p>
             </div>
@@ -532,9 +615,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 
           <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2023 - 2024</div>
-              <h2>WebSite</h2>
-              <h4>Rada 2023 / 1</h4>
+              <div class="timeline-date">2021 / 10</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/rada/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title">
+                  <h2>Rada</h2>
+                  <h4>WebSite 2021 / 10</h4>
+                </div>
+              </div>
               <p class="localization" data-local="Ich habe eine WebSite App für einen Cleint erstellt">
                 I Have Built A WebSite App For A Cleint
               </p>
@@ -543,9 +631,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2022 - 2023</div>
-              <h2>Android & Desktop App</h2>
-              <h4>Cabels 2022 / 10</h4>
+              <div class="timeline-date">2021 / 7</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/cables/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title">
+                  <h2>Cabels</h2>
+                  <h4>Android & Desktop App Cabels 2021 / 7</h4>
+                </div>
+              </div>
+           
               <p class="localization" data-local="Ich habe eine Android- und Desktop-App für einen Cleint erstellt">
                 I Have Built An Android And Desktop App For A Cleint
               </p>
@@ -557,9 +651,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             data-wow-delay="0.1s"
           >
             <div class="timeline-text">
-              <div class="timeline-date">2022 - 2023</div>
-              <h2>Android App</h2>
-              <h4>Interpolation 2022 / 4</h4>
+              <div class="timeline-date">2021 / 3</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/interpolation/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title">
+                  <h2>Interpolation</h2>
+                  <h4>Android App 2021 / 3</h4>
+                </div>
+              </div>
               <p class="localization" data-local="Ich habe das Interpolationsprojekt für meine Universität gemacht">
                 I Have Made The Interpolation Project For My University 
               </p>
@@ -567,9 +666,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           </div>
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2021 - 2022</div>
-              <h2>Android App</h2>
-              <h4>X-POSITRON 2021 / 2</h4>
+              <div class="timeline-date">2020 / 4</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/X-POSITRON/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title ">
+                  <h2>X-POSITRON</h2>
+                  <h4>Android App 2020 / 4</h4>
+                </div>
+              </div>
+             
               <p class="localization" data-local="Ich habe ein Android-App für mein College erstellt">
                 I Have Made An Android Application For My College 
               </p>
@@ -580,9 +685,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             data-wow-delay="0.1s"
           >
             <div class="timeline-text">
-              <div class="timeline-date">2020 - 2021</div>
-              <h2>Game Dev</h2>
-              <h4>X_O Game 2020 / 1</h4>
+              <div class="timeline-date">2020 / 1</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/X-O/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title">
+                  <h2>X_O Game</h2>
+              <h4>Game Dev 2020 / 1</h4>
+                </div>
+              </div>
+             
               <p class="localization" data-local="Ich habe ein einfaches Tic Tac Toe-Spiel entwickelt">
                 I Develped A Simple Tic Tac Toe Game 
               </p>
@@ -590,9 +701,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           </div>
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2019 - 2020</div>
-              <h2>Web App</h2>
-              <h4>X-POSITRON 2019 / 2</h4>
+              <div class="timeline-date">2019 / 2</div>
+              <div class="d-flex align-items-center gap-2">
+                <img src="img/projects/X-POSITRON/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
+                <div class="title">
+                  <h2>X-POSITRON</h2>
+                  <h4>Web App 2020 / 4</h4>
+                </div>
+              </div>
               <p  class="localization" data-local="Ich habe ein Web-App für mein College erstellt">
                 I Have Made A Web Application For My College 
               </p>
@@ -631,6 +747,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         </div>
         <div class="row portfolio-container">
           <div
+            class="col-lg-4 col-md-6 col-sm-12 portfolio-item flutter web-app wow fadeInUp"
+            data-wow-delay="0.0s"
+            onclick="navigateToAppPage('lordsbox')" 
+          >
+            <div class="portfolio-wrap">
+              <div class="portfolio-img">
+                <img src="img/projects/lordsbox/logo.png" alt="Image" />
+              </div>
+              <div class="portfolio-text">
+                <h3>Lordsbox</h3>
+                <a
+                  class="btn"
+                  href="img/projects/lordsbox/logo.png"
+                  data-lightbox="portfolio"
+                  >+</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
             class="col-lg-4 col-md-6 col-sm-12 portfolio-item flutter wow fadeInUp"
             data-wow-delay="0.0s"
             onclick="navigateToAppPage('pharmacy')" 
@@ -643,7 +779,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <h3>Pharmacy</h3>
                 <a
                   class="btn"
-                  href="img/projects/cables/logo.png"
+                  href="img/projects/Pharmacy/logo.png"
                   data-lightbox="portfolio"
                   >+</a
                 >
