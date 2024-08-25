@@ -1,7 +1,7 @@
-let btn =document.querySelector(".about .about-grid .btn");
+let btn =document.querySelector(".about .btn");
 
 btn.onclick = ()=>{
-    let skills =document.querySelector(".about .about-grid .about-content .more-skills");
+    let skills =document.querySelector(".about .about-content .more-skills");
     skills.classList.toggle("show");
     // change local
     let htmlTag = document.querySelector("html");
@@ -30,7 +30,7 @@ let aboutMeSection =document.querySelector(".about-me");
 
 window.onscroll = function() {
         if (window.scrollY >= aboutMeSection.getBoundingClientRect().top  ) {
-            let precentages =document.querySelectorAll(".about-grid .my-language .precentage path.color");
+            let precentages =document.querySelectorAll(" .my-language .precentage path.color");
             precentages.forEach((precentage)=>{
                 precentage.classList.add("show");
             });

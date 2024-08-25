@@ -1,0 +1,68 @@
+ /* ======= Breadcrumbs CSS ======= */
+ .breadcrumbs {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 25px 0 15px 0; /* Increased padding for top and bottom */
+    font-family: Arial, sans-serif; /* Set font */
+    font-size: 18px; /* Larger font size */
+  }
+
+  .breadcrumbs nav {
+    display: flex;
+    justify-content: center; /* Center the breadcrumb content */
+  }
+
+  .breadcrumbs .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumbs ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  .breadcrumbs ol li {
+    display: flex;
+    align-items: center;
+    color: #6c757d; /* Grey color for text */
+    margin-right: 15px; /* Horizontal space between li elements */
+  }
+
+  .breadcrumbs ol li:last-child {
+    margin-right: 0; /* Remove margin on the last item */
+  }
+
+  .breadcrumbs ol li a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    transition: color 0.2s ease-in-out;
+  }
+
+  .breadcrumbs ol li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+
+  .breadcrumbs ol li + li::before {
+    content: "/"; /* Separator between breadcrumb items */
+    padding: 0 10px;
+    color: #6c757d;
+  }
+
+  .breadcrumbs ol li span.name {
+    font-weight: bold; /* Make the current breadcrumb item bold */
+    color: #343a40; /* Darker grey color for the current item */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .breadcrumbs {
+      padding: 15px 0; /* Adjusted padding for smaller screens */
+      font-size: 16px; /* Slightly smaller font size on mobile */
+    }
+
+    .breadcrumbs nav {
+      padding: 0 15px;
+    }
+  }

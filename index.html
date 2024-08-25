@@ -7,32 +7,34 @@
 
     <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      href="fonts/Montserrat.css"
       rel="stylesheet"
     />
     <!-- Google Fonts Roboto -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="fonts/Roboto.css"
     />
     <!-- MDB -->
     <link rel="stylesheet" href="mdb/css/mdb.min.css" />
 
     <!-- CSS Libraries -->
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      href="css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    /> -->
+
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="/css/fontawesome-6.5.1/css/all.css">
+
+    <!-- slick css -->
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+
     <link href="css/style.css" rel="stylesheet" />
 
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon_16.ico">
@@ -41,6 +43,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon/favicon_48.ico">
     <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon/favicon_64.ico">
     <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -63,14 +67,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           class="collapse navbar-collapse justify-content-between"
           id="navbarCollapse"
         >
-          <div class="navbar-nav ml-auto">
+          <div class="navbar-nav m-auto">
             <a href="#home" class="nav-item nav-link active localization" data-local="Haus">Home</a>
             <a href="#about" class="nav-item nav-link localization" data-local="über">About</a>
             <a href="#companies" class="nav-item nav-link localization" data-local="UnterNahmen">Companies</a>
             <a href="#service" class="nav-item nav-link localization" data-local="Leistungen">Service</a>
             <a href="#experience" class="nav-item nav-link localization" data-local="Erfahrung">Experience</a>
             <a href="#portfolio" class="nav-item nav-link localization" data-local="Portfolio">Portfolio</a>
-            <a href="#review" class="nav-item nav-link localization"  data-local="Rezension">Review</a>
+            <a href="#review" class="nav-item nav-link localization"  data-local="Bewertungen">Review</a>
             <a href="#team" class="nav-item nav-link localization" data-local="Team">Team</a>
           </div>
           <div class="dropdown navbar-light navbar-nav nav-link">
@@ -115,10 +119,396 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 
     <!-- About Start -->
     <div class="about" data-wow-delay="0.1s" id="about">
+      <div class="section-header text-center">
+        <p class="localization" data-local="Erfahren Sie mehr über mich">
+          Learn About Me
+        </p>
+        <h2 class="localization" data-local="Meine Fähigkeiten">My Skills</h2>
+      </div>
+      <div class="container">
+        <div class="tabs">
+          <ul class="tab-links">
+            <li class="active"><a href="#backend">Back-End</a></li>
+            <li><a href="#frontend">Front-End</a></li>
+            <li><a href="#mobile" class="localization"  data-local="Mobile Entwicklung">Mobile Development</a></li>
+            <li><a href="#technical-skills" class="localization"  data-local="Technische Fähigkeiten">Technical skills</a></li>
+          </ul>
+  
+          <div class="tab-content">
+            <!-- Back-End Tab -->
+            <div id="backend" class="tab active">
+              <div class="about-content wow slideInRight">
+                <div class="section-header text-left">
+                  <h2 class="localization" data-local="Back-End">Back-End</h2>
+                </div>
+                <div class="about-text">
+                  <p  class="localization" data-local="Ich bin auf Backend-Entwicklung spezialisiert und erstelle robuste und skalierbare serverseitige Anwendungen.
+                  Mein Fachwissen umfasst die Arbeit mit PHP, Node.js und Frameworks wie Laravel und Express.js,
+                  um effiziente und sichere Webdienste zu erstellen.">
+                    I specialize in back-end development, creating robust and scalable server-side applications.
+                     My expertise includes working with PHP, Node.js, and frameworks like Laravel and Express.js
+                      to build efficient and secure web services.
+                  </p>
+                </div>
+                <div class="skills">
+                  <!-- php & Laravel  -->
+                  <div class="skill-name">
+                    <p>PHP - Laravel</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end php & Laravel -->
+  
+                  <!-- NodeJs -->
+                  <div class="skill-name">
+                    <p>NodeJs - ExpressJs</p>
+                    <p>90%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end NodeJs - ExpressJs -->
+  
+                  <!-- Python -->
+                  <div class="skill-name">
+                    <p>Python</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Python -->
+  
+                  <!-- SQL -->
+                  <div class="skill-name">
+                    <p>SQL</p>
+                    <p>90%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end SQL -->
+                </div>
+                <a href="mailto:eesahalabi@gmail.com" target="_blank" class="btn localization" data-local="Stellen Sie mich ein">
+                  Hire me
+                </a>
+              </div>
+            </div>
+  
+            <!-- Front-End Tab -->
+            <div id="frontend" class="tab">
+              <div class="about-content">
+                <div class="section-header text-left">
+                  <h2 class="localization" data-local="Front-End">Front-End</h2>
+                </div>
+                <div class="about-text">
+                  <p class="localization" data-local="Meine Fähigkeiten in der Front-End-Entwicklung ermöglichen es mir, optisch ansprechende und benutzerfreundliche Schnittstellen zu erstellen.
+                  Ich habe Erfahrung mit HTML, CSS, JavaScript und modernen Tools wie Livewire, Blade und Filament.
+                  Diese Technologien ermöglichen es mir, reaktionsschnelle,
+                  dynamische und ansprechende Websites und Anwendungen zu erstellen, die ein außergewöhnliches Benutzererlebnis bieten.">
+                    My front-end development skills allow me to create visually appealing and user-friendly interfaces.
+                     I have experience with HTML, CSS, JavaScript, and modern tools like Livewire, Blade, and Filament.
+                      These technologies enable me to build responsive,
+                     dynamic, and engaging websites and applications that provide an exceptional user experience.
+                  </p>
+                </div>
+                <div class="skills">
+                  <!-- Html & Css -->
+                  <div class="skill-name">
+                    <p>Html & Css</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Html & Css -->
+  
+                  <!-- Javascript -->
+                  <div class="skill-name">
+                    <p>Javascript</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Javascript -->
+  
+                  <!-- Blade / LiveWire -->
+                  <div class="skill-name">
+                    <p>Blade / LiveWire</p>
+                    <p>90%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Blade / LiveWire -->
+  
+                  <!-- Filament -->
+                  <div class="skill-name">
+                    <p>Filament</p>
+                    <p>90%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Filament -->
+  
+                  <!-- ReactJs hooks -->
+                  <div class="skill-name">
+                    <p>ReactJs hooks</p>
+                    <p>70%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end ReactJs hooks -->
+                </div>
+                <a href="mailto:eesahalabi@gmail.com" target="_blank" class="btn localization" data-local="Stellen Sie mich ein">
+                  Hire me
+                </a>
+              </div>
+            </div>
+  
+            <!-- Mobile Development Tab -->
+            <div id="mobile" class="tab">
+              <div class="about-content">
+                <div class="section-header text-left">
+                  <h2 class="localization" data-local="Mobile Entwicklung">
+                    Mobile Development
+                  </h2>
+                </div>
+                <div class="about-text" >
+                  <p class="localization" data-local="Ich verfüge über umfangreiche Erfahrung in der mobilen Entwicklung, mit Schwerpunkt auf der Erstellung plattformübergreifender Anwendungen mit Flutter und Dart.
+                  Ich schaffe reibungslose und intuitive mobile Erlebnisse und stelle eine hohe Leistung auf Android- und iOS-Plattformen sicher.">
+                    I have a strong background in mobile development, with a focus on building cross-platform applications using Flutter and Dart.
+                     I create smooth and intuitive mobile experiences, ensuring high performance on both Android and iOS platforms.
+                  </p>
+                </div>
+                <div class="skills">
+                  <!-- Dart  -->
+                  <div class="skill-name">
+                    <p>Dart</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Dart -->
+  
+                  <!-- Flutter   -->
+                  <div class="skill-name">
+                    <p>Flutter</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Flutter -->
+                </div>
+                <a href="mailto:eesahalabi@gmail.com" target="_blank" class="btn localization" data-local="Stellen Sie mich ein">
+                  Hire me
+                </a>
+              </div>
+            </div>
+            <!-- technical skills Development Tab -->
+            <div id="technical-skills" class="tab">
+              <div class="about-content">
+                <div class="section-header text-left">
+                  <h2 class="localization" data-local="Technische Fähigkeiten">
+                    Technical skills
+                  </h2>
+                </div>
+                <div class="about-text">
+                  <p class="localization" data-local="Meine technischen Fähigkeiten umfassen eine breite Palette an Tools und Technologien, die für die moderne Entwicklung und Bereitstellung unerlässlich sind.
+                  Ich bin erfahren in der Versionskontrolle mit Git, der Serververwaltung mit Linux und der Konfiguration von Webservern wie Nginx und Apache.
+                  Ich habe auch Erfahrung mit der Containerisierung mit Docker und der Leistungsoptimierung mit Redis.">
+                    My technical skills encompass a wide range of tools and technologies essential for modern development and deployment.
+                     I am proficient in version control with Git, server management using Linux, and configuring web servers like Nginx and Apache.
+                     I also have experience with containerization using Docker and optimizing performance with Redis.
+                  </p>
+                </div>
+                <div class="skills">
+                  <!-- Git  -->
+                  <div class="skill-name">
+                    <p>Git</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Git -->
+  
+                  <!-- Linux  -->
+                  <div class="skill-name">
+                    <p>Linux</p>
+                    <p>85%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Linux -->
+  
+                  <!-- Nginx/Apache  -->
+                  <div class="skill-name">
+                    <p>Nginx/Apache</p>
+                    <p>80%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Nginx/Apache -->
+  
+                  <!-- Docker  -->
+                  <div class="skill-name">
+                    <p>Docker</p>
+                    <p>80%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Docker -->
+
+                  <!-- Unit Testing  -->
+                  <div class="skill-name">
+                    <p>Unit Testing</p>
+                    <p>85%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="85"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Unit Testing -->
+  
+                  <!-- Cache (Redis)  -->
+                  <div class="skill-name">
+                    <p>Cache (Redis)</p>
+                    <p>70%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <!-- end Cache (Redis) -->
+                </div>
+                <a href="mailto:eesahalabi@gmail.com" target="_blank" class="btn localization" data-local="Stellen Sie mich ein">
+                  Hire me
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- languages Start -->
+    <div class="languages" data-wow-delay="0.1s" id="about">
       
-      <div class="about-grid">
         <div class="about-me wow slideInLeft" data-wow-delay="0.1s">
-          <div class="section-header text-left ">
+          <div class="section-header text-center ">
             <p class="localization" data-local="Erfahren Sie mehr über mich">Learn About Me</p>
             <h2 class="localization" data-local="Meine Weltsprachen">My World Languages</h2>
           </div>
@@ -153,7 +543,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
               </div>
             </div>
             <div class="my-language" data-wow-delay="0.0s">
-              <div class="precentage" data-precentage="85%">
+              <div class="precentage" data-precentage="90%">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -182,7 +572,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
               </div>
             </div>
             <div class="my-language" data-wow-delay="0.0s">
-              <div class="precentage" data-precentage="70%">
+              <div class="precentage" data-precentage="80%">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -211,141 +601,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
               </div>
             </div>
           </div>
-        </div>
-        <div class="about-content wow slideInRight">
-          <div class="section-header text-left">
-            <p class="localization" data-local="Erfahren Sie mehr über mich">Learn About Me</p>
-            <h2 class="localization" data-local="Meine Fähigkeiten">My Skills</h2>
-          </div>
-          <div class="about-text">
-            <p >
-             <span class="localization" data-local="Programmiersprachen">programing Languages </span><br>
-             <span class="localization" data-local="3 Jahre Flutter & Dart Erfahrung"> 3 Years Experience of Flutter & Dart</span><br>
-             <span class="localization" data-local=" 4 Jahre Erfahrung im Webdesign"> 4 Years Experience of Web Design </span><br>
-             <span class="localization" data-local=" 4 Jahre Erfahrung in der Webentwicklung"> 4 Years Experience of Web Development</span>
-            </p>
-          </div>
-          <div class="skills">
-            <div class="skill-name">
-              <p>Flutter & Dart</p>
-              <p>95%</p>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <div class="skill-name">
-              <p>Html & Css</p>
-              <p>95%</p>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="95"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <div class="skill-name">
-              <p>JavaScript</p>
-              <p>85%</p>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="85"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <div class="skill-name">
-              <p>PHP & SQL</p>
-              <p>90%</p>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="90"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <div class="skill-name">
-              <p>Python</p>
-              <p>70%</p>
-            </div>
-            <div class="progress">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                aria-valuenow="70"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <div class="more-skills">
-              <br>
-              <div class="about-text">
-                <p>
-                 FrameWorks : 
-                </p>
-              </div>
-              <div class="skill-name">
-                <p>BootStrap</p>
-                <p>95%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="95"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <div class="skill-name">
-                <p>ReactJs Hooks</p>
-                <p>80%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <div class="skill-name">
-                <p>Laravel</p>
-                <p>85%</p>
-              </div>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-valuenow="85"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            </div>
-          <button class="btn localization" data-local="Weniger">More</button>
-        </div>
+       
       </div>
     </div>
-    <!-- About End -->
+    <!-- languages End -->
 
-        <!-- Certificate start -->
+    <!-- Certificate start -->
+
         <div class="certificates" id="certificates">
           <div class="container">
             <div
@@ -355,88 +617,98 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             <p class="localization" data-local="BILDUNG">Education</p>
             <h2 class="localization" data-local="Meine Zertifikate">My Certificates</h2>
           </div>
-            <div class="certificate-grid">
+          <div class="carousel-container">
+            <div class="certificate-slick">
+              <!-- Dynamic content will be inserted here -->
     
-              <div class="certificate-item wow slideInUp"
-              data-wow-delay="0.2s">
-                <h4 class="certificate-header">
-                  Front-End
-                </h4>
-                <p class="certificate-text localization" data-local="9 Zertifikate von Coursera">
-                 9 certificates from Coursera
-                </p>
-                <div
-                class="btn localization" data-local="Schau mal" onclick="checkCertificate('Front-End')">view</div>
-              </div>
-              <!-- certificate-item -->
-
-              <div class="certificate-item wow slideInUp"
-              data-wow-delay="0.2s">
-                <h4 class="certificate-header">
-                  Back-End
-                </h4>
-                <p class="certificate-text localization" data-local="9 Zertifikate von Coursera">
-                 9 certificates from Coursera
-                </p>
-                <div
-                class="btn localization" data-local="Schau mal" onclick="checkCertificate('Back-End')">view</div>
-              </div>
-              <!-- certificate-item -->
-
-              
-              <div class="certificate-item wow slideInUp"
-              data-wow-delay="0.3s">
-                <h4 class="certificate-header">
-                  Flutter
-                </h4>
-                <p class="certificate-text localization" data-local="9 Zertifikate">
-                 9 certificates
-                </p>
-                <div
-                class="btn localization" data-local="Schau mal" onclick="checkCertificate('Flutter')">view</div>
-              </div>
-              <!-- certificate-item -->
-              
-            
-    
-              <div class="certificate-item wow slideInUp"
-              data-wow-delay="0.4s">
-                <h4 class="certificate-header">
-                  PHP & MYSQL
-                </h4>
-                <p class="certificate-text localization" data-local=" Zertifikat von udemy">
-                 certificate from udemy
-                </p>
-                <a 
-                href="https://www.udemy.com/certificate/UC-dadd47b3-bc1b-4ad0-b6de-440ffe3a6baf/"
-               target="_blank"
-                class="btn localization" data-local="Schau mal">view</a>
-              </div>
-              <!-- certificate-item -->
-
-              <div class="certificate-item wow slideInUp"
-              data-wow-delay="0.4s">
-                <h4 class="certificate-header">
-                  ReactJs
-                </h4>
-                <p class="certificate-text localization" data-local=" Zertifikat von udemy">
-                 certificate from udemy
-                </p>
-                <a 
-                href="https://www.udemy.com/certificate/UC-ac86af03-553a-4689-aa34-d66863dc2812/"
-               target="_blank"
-                class="btn localization" data-local="Schau mal">view</a>
-              </div>
-              <!-- certificate-item -->
-              
+                <div class="certificate-item wow slideInUp"
+                data-wow-delay="0.2s">
+                  <h4 class="certificate-header">
+                    Front-End
+                  </h4>
+                  <p class="certificate-text localization" data-local="Zertifikat von Meta">
+                  Certificate from Meta
+                  </p>
+                  <!-- <div
+                  class="btn localization" data-local="Schau mal" onclick="checkCertificate('Front-End')">view</div> -->
+                  <a 
+                  href="https://coursera.org/share/61f8e12922d69fdca4cbe1eb02866e10"
+                 target="_blank"
+                  class="btn localization" data-local="Schau mal">view</a>
+                </div>
+                <!-- certificate-item -->
+  
+                <div class="certificate-item wow slideInUp"
+                data-wow-delay="0.2s">
+                  <h4 class="certificate-header">
+                    Back-End
+                  </h4>
+                  <p class="certificate-text localization" data-local="Zertifikat von Meta">
+                    Certificate from Meta
+                  </p>
+                  <!-- <div
+                  class="btn localization" data-local="Schau mal" onclick="checkCertificate('Back-End')">view</div> -->
+                  <a 
+                  href="https://coursera.org/share/770823e788a864591388494763da2b73"
+                 target="_blank"
+                  class="btn localization" data-local="Schau mal">view</a>
+                </div>
+                <!-- certificate-item -->
+  
+                
+                <div class="certificate-item wow slideInUp"
+                data-wow-delay="0.3s">
+                  <h4 class="certificate-header">
+                    Flutter
+                  </h4>
+                  <p class="certificate-text localization" data-local="9 Zertifikate">
+                   9 certificates
+                  </p>
+                  <div
+                  class="btn localization" data-local="Schau mal" onclick="checkCertificate('Flutter')">view</div>
+                </div>
+                <!-- certificate-item -->
+                
+                <div class="certificate-item wow slideInUp"
+                data-wow-delay="0.4s">
+                  <h4 class="certificate-header">
+                    PHP & MYSQL
+                  </h4>
+                  <p class="certificate-text localization" data-local=" Zertifikat von udemy">
+                   certificate from udemy
+                  </p>
+                  <a 
+                  href="https://www.udemy.com/certificate/UC-dadd47b3-bc1b-4ad0-b6de-440ffe3a6baf/"
+                 target="_blank"
+                  class="btn localization" data-local="Schau mal">view</a>
+                </div>
+                <!-- certificate-item -->
+  
+                <div class="certificate-item wow slideInUp"
+                data-wow-delay="0.4s">
+                  <h4 class="certificate-header">
+                    ReactJs
+                  </h4>
+                  <p class="certificate-text localization" data-local=" Zertifikat von udemy">
+                   certificate from udemy
+                  </p>
+                  <a 
+                  href="https://www.udemy.com/certificate/UC-ac86af03-553a-4689-aa34-d66863dc2812/"
+                 target="_blank"
+                  class="btn localization" data-local="Schau mal">view</a>
+                </div>
+                <!-- certificate-item -->
+                
             </div>
+          </div>
     
           </div>
         </div>
         <!-- Certificate End -->
 
 
-            <!-- companies section -->
+   
+      <!-- start Company section -->
       <section class="site-section companies" id="companies">
         <div class="container">
           <div
@@ -446,41 +718,60 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           <p class="localization" data-local="Unternehmen, für die ich gearbeitet habe">Companies I Worked For</p>
           <h2 class="localization" data-local="Meine Erfahrung">My Experience</h2>
         </div>
-
-          <div class="companies-grid">
-            <!-- Start company item -->
-            <div class="company-item">
-              <img loading="lazy" 
-                class="company-img"
-                src="img/projects/cloudsZone/logo.png"
-                alt="Card image cap"
-              />
-              <div class="company-body">
-                <h5 class="company-title">CloudsZone</h5>
-                <p class="company-position">Flutter & Laravel Developer</p>
-                <small class="company-small">2022/4 - 2023/10</small>
-                <p class="company-text localization" data-local="
-                Cloud Zone ist ein Unternehmen für Softwareberatung
-                Sitz in Saudi-Arabien. Ich arbeite seit einem Jahr und halb für dieses Unternehmen
-                und Ich habe viel Erfahrung gesammelt, ich habe als
-                Flutter-Entwickler und Laravel-Entwickler gearbeitet, ich und
-                Das professionelle Team des Unternehmens entwickelte mobile Apps
-                mit Flutter und erstellen wir unsere eigene API mit Laravel">
-                  Cloud zone is a company for software consulting , it is
-                  located in saudi Arabia I have worked at this company for year
-                  and a half and collected a lot of experience, I worked as a
-                  Flutter Developer and Laravel Developer, me and the
-                  professional team of the company were developing mobile apps
-                  with Flutter and make our own API with Laravel
-                </p>
-                <a href="https://cloudszone.net/" class="btn btn-primary">Website</a>
+  
+          <div class="companies-content">
+            <!-- Company start -->
+            <div class="company wow slideInUp"  data-wow-delay="0.1s">
+              <div class="company-info">
+                <div class="company-info-data">
+                  <h5 class="company-title">Peaklink</h5>
+                  <small class="company-date">2024/2 - 2024/7</small>
+                </div>
+                <img class="company-img" loading="lazy" src="img/projects/peaklink/logo.jpg" alt="peaklink logo" />
+              </div>
+  
+              <div class="job-info">
+                <div class="job-title localization" data-local="Full Stack Entwickler">Full Stack Developer</div>
+                <div class="job-type localization" data-local="Vollzeit">Full Time</div>
+                <div class="job-desc localization" data-local="Als Back-End-Entwickler bei Peaklink in Syrien habe ich an mehreren Plattformen mitgearbeitet, darunter Web- und Mobilanwendungen, indem ich APIs mit Laravel und Node.js entwickelt und vorbereitet habe. Durch die Zusammenarbeit mit Front-End-Entwicklern habe ich mich auch zum Full-Stack-Entwickler entwickelt. Ich habe Front-End-Frameworks wie Livewire, Filament und Blade mit Back-End-Systemen integriert, um hochwertige, reaktionsfähige Websites und Dashboards zu erstellen.">
+                  As a Back-End Developer at Peaklink in Syria, I contributed to multiple platforms, including web and mobile applications, by developing and preparing APIs using Laravel and Node.js. I also advanced towards becoming a Full-Stack Developer by working with Front-End developers. I integrated front-end frameworks like Livewire, Filament, and Blade with Back-End systems to create high-quality, responsive websites and dashboards
+                </div>
+                <a href="https://peaklink.sy/" target="_blank" class="btn btn-primary">Website</a>
+             
               </div>
             </div>
-            <!-- end company item -->
+            <!-- Company end -->
+  
+                <!-- Company start -->
+                <div class="company wow slideInUp"  data-wow-delay="0.1s">
+                  <div class="company-info">
+                  <div class="company-info-data">
+                      <h5 class="company-title">CloudsZone</h5>
+                      <small class="company-date">2022/4 - 2023/10</small>
+                  </div>
+                    <img class="company-img" loading="lazy"  src="img/projects/cloudsZone/logo.png" alt="peaklink logo" />
+                  </div>
+      
+                  <div class="job-info">
+                    <div class="job-title localization" data-local="Full Stack Entwickler">Full Stack Developer</div>
+                    <div class="job-type localization" data-local="Remotely">Remotely</div>
+                    <div class="job-desc localization" data-local="Mit 1,5 Jahren Erfahrung als Back-End-Entwickler bei CloudZone in Saudi-Arabien habe ich mein Fachwissen im Erstellen und Warten zuverlässiger RESTful-APIs und serverseitiger Logik mit PHP und Node.js erweitert. Bei CloudZone war ich für die Entwicklung und Bereitstellung komplexer Anwendungen und Dienste verantwortlich, die einen hohen Datenverkehr bewältigen mussten und für den Geschäftsbetrieb des Unternehmens von entscheidender Bedeutung waren, darunter Content-Management-Systeme (CMS) und Enterprise-Resource-Planning-Systeme (ERP).">
+                      With 1.5 years of experience as a Back-End Developer at CloudZone in Saudi Arabia, I expanded my expertise in building and maintaining reliable RESTful APIs and server-side logic using PHP and Node.js. At CloudZone, I was responsible for developing and deploying complex applications and services that handled high traffic and were vital to the company’s business operations, including content management systems (CMS) and enterprise resource planning (ERP) systems.
+                    </div>
+                    <a href="https://cloudszone.net/" target="_blank" class="btn btn-primary">Website</a>
+                 
+                  </div>
+                </div>
+                <!-- Company end -->
           </div>
+  
         </div>
       </section>
       <!-- End Company section -->
+
+
+
+
 
     <!-- Service Start -->
     <div class="service" id="service">
@@ -500,9 +791,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <i class="fa-solid fa-mobile-screen"></i>
               </div>
               <div class="service-text">
-                <h3>Apps Design</h3>
-                <p class="localization" data-local="Entwerfen einer schönen App Ui mit Flutter">
-                  Designing A Beautiful App UI Using Flutter  
+                <h3>Apps Development</h3>
+                <p class="localization" data-local="Entwicklung Android- und iOS-Apps mit Flutter">
+                  Developing Android & Ios Apps Using Flutter
                 </p>
               </div>
             </div>
@@ -513,9 +804,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <i class="fa-solid fa-code"></i>
               </div>
               <div class="service-text">
-                <h3 class="localization" data-local="Apps Entwicklung">Apps Development</h3>
-                <p class="localization" data-local="Entwicklung Android- und iOS-Apps mit Flutter">
-                  Developing Android & Ios Apps Using Flutter
+                <h3 class="localization" data-local="Apps Entwicklung">Web Development</h3>
+                <p class="localization" data-local="Entwickeln einer Web-App mit meinem Full-Stack-Wissen">
+                  Developing A Web App Using My Full-Stack Knowledge
                 </p>
               </div>
             </div>
@@ -526,9 +817,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <i class="fa-solid fa-palette"></i>
               </div>
               <div class="service-text">
-                <h3 >Web Design</h3>
-                <p class="localization" data-local="Entwerfen einer schönen Web Ui mit Html & CSS & JavaScript & BootStrap & React">
-                  Designing A Beautiful Web UI Using Html & Css & JavaScript & BootStrap & React
+                <h3 >Design Ui-Ux</h3>
+                <p class="localization" data-local="Entwerfen einer schönen Benutzeroberfläche mit den besten und modernsten Tools">
+                  Designing A Beautiful UI Using Best And Modern Tools
                 </p>
               </div>
             </div>
@@ -539,9 +830,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <i class="fa fa-laptop-code"></i>
               </div>
               <div class="service-text">
-                <h3>Rest Api</h3>
-                <p class="localization" data-local="Erstellen einer API mit PHP & SQL & Laravel">
-                  Building An Api Using PHP & SQL & Laravel
+                <h3>Make Rest Api End-Point</h3>
+                <p class="localization" data-local="Aufbau einer zuverlässigen und starken API">
+                  Building A Reliable And strong Api 
                 </p>
               </div>
             </div>
@@ -552,9 +843,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <i class="fa-solid fa-desktop"></i>
               </div>
               <div class="service-text">
-                <h3>Desktop Design</h3>
-                <p class="localization" data-local="Entwerfen einer schönen UI für Desktop-Apps mit Flutter">
-                  Designing A Beautiful Desktop Apps UI Using Flutter
+                <h3>Desktop Development</h3>
+                <p class="localization" data-local="Entwickeln Desktop-Apps mit Flutter">
+                  Developing Desktop Apps Using Flutter
                 </p>
               </div>
             </div>
@@ -565,9 +856,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
                 <i class="fa-solid fa-computer"></i>
               </div>
               <div class="service-text">
-                <h3 class="localization" data-local="Desktop Entwicklung">Desktop Development</h3>
-                <p class="localization" data-local="Entwickeln Desktop-Apps mit Flutter">
-                  Developing Desktop Apps Using Flutter
+                <h3 class="localization" data-local="Desktop Entwicklung">Server Management</h3>
+                <p class="localization" data-local="Überwachen Sie den Server und stellen Sie sicher, dass alles in Ordnung ist">
+                  Monitor The Server And Making Sure that everything is okay
                 </p>
               </div>
             </div>
@@ -588,141 +879,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           <h2 class="localization" data-local="Arbeitserfahrung">Working Experience</h2>
         </header>
         <div class="timeline">
-
-          <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              
-              <div class="timeline-date">2023 / 5</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/lordsbox/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title">
-                  <h2>Lordsbox </h2>
-                  <h4>Flutter Monitoring & Tracking System 2023 / 5</h4>
-                </div>
-              </div>
-                  <p class="localization" data-local="Ich habe ein App für ein Transportunternehmen erstellt">
-                    I Have Built An App For A Goods transportation company
-                  </p>
-            </div>
-          </div>
-
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">2022 / 1</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/pharmacy/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title">
-                  <h2>Pharmacy</h2>
-                  <h4>Flutter App 2022 / 1</h4>
-                </div>
-              </div>
-              <p class="localization" data-local="Ich habe ein App für eine Lokale Apotheke erstellt">
-                I Have Built An App For A Local Pharmacy
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">2021 / 10</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/rada/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title">
-                  <h2>Rada</h2>
-                  <h4>WebSite 2021 / 10</h4>
-                </div>
-              </div>
-              <p class="localization" data-local="Ich habe eine WebSite App für einen Cleint erstellt">
-                I Have Built A WebSite App For A Cleint
-              </p>
-            </div>
-          </div>
-
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">2021 / 7</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/cables/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title">
-                  <h2>Cabels</h2>
-                  <h4>Android & Desktop App Cabels 2021 / 7</h4>
-                </div>
-              </div>
-           
-              <p class="localization" data-local="Ich habe eine Android- und Desktop-App für einen Cleint erstellt">
-                I Have Built An Android And Desktop App For A Cleint
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="timeline-item right wow slideInRight"
-            data-wow-delay="0.1s"
-          >
-            <div class="timeline-text">
-              <div class="timeline-date">2021 / 3</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/interpolation/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title">
-                  <h2>Interpolation</h2>
-                  <h4>Android App 2021 / 3</h4>
-                </div>
-              </div>
-              <p class="localization" data-local="Ich habe das Interpolationsprojekt für meine Universität gemacht">
-                I Have Made The Interpolation Project For My University 
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">2020 / 4</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/X-POSITRON/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title ">
-                  <h2>X-POSITRON</h2>
-                  <h4>Android App 2020 / 4</h4>
-                </div>
-              </div>
-             
-              <p class="localization" data-local="Ich habe ein Android-App für mein College erstellt">
-                I Have Made An Android Application For My College 
-              </p>
-            </div>
-          </div>
-          <div
-            class="timeline-item right wow slideInRight"
-            data-wow-delay="0.1s"
-          >
-            <div class="timeline-text">
-              <div class="timeline-date">2020 / 1</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/X-O/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title">
-                  <h2>X_O Game</h2>
-              <h4>Game Dev 2020 / 1</h4>
-                </div>
-              </div>
-             
-              <p class="localization" data-local="Ich habe ein einfaches Tic Tac Toe-Spiel entwickelt">
-                I Develped A Simple Tic Tac Toe Game 
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">2019 / 2</div>
-              <div class="d-flex align-items-center gap-2">
-                <img loading="lazy"  src="img/projects/X-POSITRON/logo.png" style="width: 75px; height:75px;" alt="" srcset="">
-                <div class="title">
-                  <h2>X-POSITRON</h2>
-                  <h4>Web App 2020 / 4</h4>
-                </div>
-              </div>
-              <p  class="localization" data-local="Ich habe ein Web-App für mein College erstellt">
-                I Have Made A Web Application For My College 
-              </p>
-            </div>
-          </div>
+            <!-- timelines goes here -->
         </div>
         <div class="more-timeline">
           <div class="btn localization" data-local="Mehr">More</div>
@@ -747,155 +904,15 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           <div class="col-12">
             <ul id="portfolio-filter">
               <li data-filter="*" class="filter-active localization" data-local="Alle">All</li>
-              <li data-filter=".flutter">Flutter App</li>
-              <li data-filter=".desktop">Desktop App</li>
-              <li data-filter=".web-app">Web App</li>
-              <li data-filter=".game-dev">Game Dev</li>
+                <!-- other filter goes here -->
             </ul>
           </div>
         </div>
         <div class="row portfolio-container">
-          <div
-            class="col-lg-4 col-md-6 col-sm-12 portfolio-item flutter web-app wow fadeInUp"
-            data-wow-delay="0.0s"
-            onclick="navigateToAppPage('lordsbox')" 
-          >
-            <div class="portfolio-wrap">
-              <div class="portfolio-img">
-                <img loading="lazy"  src="img/projects/lordsbox/logo.png" alt="Image" />
-              </div>
-              <div class="portfolio-text">
-                <h3>Lordsbox</h3>
-                <a
-                  class="btn"
-                  href="img/projects/lordsbox/logo.png"
-                  data-lightbox="portfolio"
-                  >+</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-sm-12 portfolio-item flutter wow fadeInUp"
-            data-wow-delay="0.0s"
-            onclick="navigateToAppPage('pharmacy')" 
-          >
-            <div class="portfolio-wrap">
-              <div class="portfolio-img">
-                <img loading="lazy"  src="img/projects/Pharmacy/logo.png" alt="Image" />
-              </div>
-              <div class="portfolio-text">
-                <h3>Pharmacy</h3>
-                <a
-                  class="btn"
-                  href="img/projects/Pharmacy/logo.png"
-                  data-lightbox="portfolio"
-                  >+</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-          class="col-lg-4 col-md-6 col-sm-12 portfolio-item flutter desktop wow fadeInUp"
-          data-wow-delay="0.0s"
-          onclick="navigateToAppPage('cables')" 
-        >
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img loading="lazy"  src="img/projects/cables/logo.png" alt="Image" />
-            </div>
-            <div class="portfolio-text">
-              <h3>Cables</h3>
-              <a
-                class="btn"
-                href="img/projects/cables/logo.png"
-                data-lightbox="portfolio"
-                >+</a
-              >
-            </div>
-          </div>
+            <!-- projects goes here -->
         </div>
-          <div
-          class="col-lg-4 col-md-6 col-sm-12 portfolio-item web-app wow fadeInUp"
-          data-wow-delay="0.0s"
-          onclick="navigateToAppPage('rada')" 
-        >
-          <div class="portfolio-wrap">
-            <div class="portfolio-img">
-              <img loading="lazy"  src="img/projects/rada/logo.png" alt="Image" />
-            </div>
-            <div class="portfolio-text">
-              <h3>Rada</h3>
-              <a
-                class="btn"
-                href="img/projects/rada/logo.png"
-                data-lightbox="portfolio"
-                >+</a
-              >
-            </div>
-          </div>
-        </div>
-            <div
-            class="col-lg-4 col-md-6 col-sm-12 portfolio-item web-app flutter wow fadeInUp"
-            data-wow-delay="0.2s"
-            onclick="navigateToAppPage('X-POSITRON')" 
-            >
-            
-              <div class="portfolio-wrap">
-                <div class="portfolio-img">
-                  <img loading="lazy"  src="img/projects/X-POSITRON/logo.png" alt="Image" />
-                </div>
-                <div class="portfolio-text">
-                  <h3>XPOSITRON</h3>
-                  <a
-                    class="btn"
-                    href="img/projects/X-POSITRON/logo.png"
-                    data-lightbox="portfolio"
-                    >+</a
-                  >
-                </div>
-              </div>
-            </div>
-          <div
-            class="col-lg-4 col-md-6 col-sm-12 portfolio-item flutter wow fadeInUp"
-            data-wow-delay="0.4s"
-            onclick="navigateToAppPage('interpolation')" 
-          >
-            <div class="portfolio-wrap">
-              <div class="portfolio-img">
-                <img loading="lazy"  src="img/projects/interpolation/logo.png" alt="Image" />
-              </div>
-              <div class="portfolio-text">
-                <h3>Interpolation</h3>
-                <a
-                  class="btn"
-                  href="img/projects/interpolation/logo.png"
-                  data-lightbox="portfolio"
-                  >+</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-sm-12 portfolio-item flutter game-dev wow fadeInUp"
-            data-wow-delay="0.6s"
-            onclick="navigateToAppPage('X_O Game')" 
-          >
-            <div class="portfolio-wrap">
-              <div class="portfolio-img">
-                <img loading="lazy"  src="img/projects/X-O/logo.png" alt="Image" />
-              </div>
-              <div class="portfolio-text">
-                <h3>X_O Game</h3>
-                <a
-                  class="btn"
-                  href="img/projects/X-O/logo.png"
-                  data-lightbox="portfolio"
-                  >+</a
-                >
-              </div>
-            </div>
-          </div>
+        <div class="more-projects">
+          <div id="moreProjectsToggleBtn" class="btn localization" data-local="Mehr anzeigen">Show More</div>
         </div>
       </div>
     </div>
@@ -972,11 +989,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
             <div class="team-item">
               <div class="team-img">
-                <img loading="lazy"  src="img/mousa.png" alt="Image" />
+                <img loading="lazy"  src="img/mousa.jpg" alt="Image" />
               </div>
               <div class="team-text">
                 <h2>Mousa AL-Halabi</h2>
-                <h4 class="localization" data-local="Flutter Entwickler | Webdesigner">Flutter Developer | Web Designer</h4>
+                <h4 class="localization" data-local="Flutter Entwickler | Webdesigner">Flutter Developer | Full-Stack Developer</h4>
                 <p >
                 <span class="localization" data-local="Ich habe in meinen ganzen Projekten mit ihm zusammengearbeitet">I Have worked with him on all of my projects</span> <br> 
                 <span class="localization" data-local="Er hat große Erfahrung auf diesem Gebiet">He Has Big Experience In The Field</span> 
@@ -998,6 +1015,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
 
     <!-- Footer Start -->
     <div class="footer wow fadeIn" data-wow-delay="0.3s">
+      <img class="shape animation" src="img/svg/dots.svg" alt="">
+      <img
+      class="shape right"
+      src="img/svg/shape-6.png"
+      alt="shape"
+    />
       <div class="container-fluid">
         <div class="container">
           <div class="footer-info">
@@ -1026,10 +1049,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     <div id="loader" class="show">
       <div class="loader"></div>
     </div> -->
-
+  
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -1041,16 +1064,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+    
+      <!-- Slick JS -->
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="lib/slick/slick.js"></script>
 
     <script src="js/about.js"></script>
-    <script src="js/appPage.js"></script>
     <script src="js/localization.js"></script>
     <script src="js/certificates.js"></script>
     <script type="module" src="js/main.js"></script>
 
      <!-- MDB -->
      <script type="text/javascript" src="mdb/js/mdb.min.js"></script>
-     <!-- Custom scripts -->
-     <script type="text/javascript"></script>
-  </body>
+  
+     <script>
+      function navigateToAppPage(appName){
+
+      // sessionStorage.setItem("app",JSON.stringify(apps[appName]));
+
+      window.location.href = "app.html?appName="+appName;
+      }
+     </script>
+  
+    </body>
 </html>

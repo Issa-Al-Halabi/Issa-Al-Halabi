@@ -9,8 +9,8 @@ function changeLocalization() {
   let mytexts = document.querySelectorAll(".localization");
 
   mytexts.forEach((text) => {
-    let temp = text.childNodes[0].nodeValue; 
-    text.childNodes[0].nodeValue  = text.dataset["local"];
+    let temp = text.innerHTML; 
+    text.innerHTML  = text.dataset["local"];
     text.dataset["local"] = temp;
   });
 

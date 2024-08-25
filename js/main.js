@@ -1,3 +1,5 @@
+import {getTimelines} from "./history.js";
+import {getProjects,getProjectCategories} from "./projects.js";
 (function ($) {
     "use strict";
     
@@ -19,12 +21,39 @@
     // Initiate the wowjs
     new WOW().init();
 
+    // display timelines
+    const timeLines = document.querySelector(".timeline");
+    timeLines.innerHTML += getTimelines();
+
+    // display projects Filter
+    const projectsFilter = document.querySelector("#portfolio-filter");
+    projectsFilter.innerHTML += getProjectCategories();
+    
+    // display projects
+    const projects = document.querySelector(".portfolio-container");
+    projects.innerHTML += getProjects();
+    
+
+    // timeline handle left right classes
+    let timelines = document.querySelectorAll(".timeline-item");
+    timelines.forEach((timeline,index)=>{
+        timeline.classList.add("wow");
+        
+        if(index % 2 == 0){
+            timeline.classList.add("left");
+            timeline.classList.add("slideInLeft");
+        }else{
+            timeline.classList.add("right");
+            timeline.classList.add("slideInRight");
+        }
+    });
 
     // timeline More button
     let timelineBtn = document.querySelector(".more-timeline .btn");
-    timelineBtn.onclick = timelinesShow; 
+    if(timelineBtn){
+        timelineBtn.onclick = timelinesShow; 
+    }
     function timelinesShow(){
-        let timelines = document.querySelectorAll(".timeline-item");
         timelines.forEach((timeline)=>{
             timeline.classList.toggle("show");
         });
@@ -53,7 +82,7 @@
         }
     }
 
-    
+
     
     // Back to top button
     $(window).scroll(function () {
@@ -130,19 +159,138 @@
         }
     });
     
-    
-    
     // Portfolio filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        
     });
 
-    $('#portfolio-filter li').on('click', function () {
+    // Handle category filtering
+    $('#portfolio-filter li').on('click', function() {
         $("#portfolio-filter li").removeClass('filter-active');
         $(this).addClass('filter-active');
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+        var filterValue = $(this).attr('data-filter');
+        if (filterValue === '*') {
+            portfolioIsotope.isotope({ filter: '*' });
+        } else {
+            // portfolioIsotope.isotope({ filter: `[data-category="${filterValue}"]` });
+            portfolioIsotope.isotope({filter: $(this).data('filter')});
+        }
+        // Reset showAll state and update the display to the first 6 items
+        showAll = false;
+        filterItems();
+
+        // Update button text
+        UpdateMoreButtonText( $('#moreProjectsToggleBtn'));
     });
+
+    const showLimit = 6;
+    var showAll = false; // Track whether to show all items or just a subset
+
+    // Function to toggle visibility of items after the 6th
+    function filterItems() {
+        const visibleItems = portfolioIsotope.isotope('getFilteredItemElements');
+        visibleItems.forEach((item, index) => {
+            if (index < showLimit) {
+                $(item).addClass('show'); // Ensure first 6 items are shown
+            } else {
+                $(item).toggleClass('show', showAll); // Toggle visibility for items after the 6th
+                // Remove 'wow' and 'fadeInUp' classes for items after the 6th
+                if (!showAll) {
+                    $(item).removeClass('wow fadeInUp');
+                }
+            }
+        });
+        portfolioIsotope.isotope('layout'); // Re-layout Isotope after changes
+    }
+
+    // Initial display: only the first 6 items
+    filterItems();
+
+    // Button click event to toggle visibility
+    $('#moreProjectsToggleBtn').on('click', function() {
+        showAll = !showAll; // Toggle the state
+        filterItems(); // Update visibility
+
+        // Update button text
+        UpdateMoreButtonText($(this));
+
+    });
+
+    const UpdateMoreButtonText = (element) => {
+        // Update button text
+        let htmlTag = document.querySelector("html");
+        let isEnglish = htmlTag.lang === "en";
     
+        // Determine the text and data-local attribute values
+        let buttonText = showAll ? (isEnglish ? 'Show Less' : 'Weniger zeigen') : (isEnglish ? 'Show More' : 'Mehr anzeigen');
+        let dataLocalText = showAll ? (isEnglish ? 'Weniger zeigen' : 'Show Less') : (isEnglish ? 'Mehr anzeigen' : 'Show More');
+    
+        // Update the text and attribute of the passed element
+        $(element).text(buttonText);
+        $(element).attr('data-local', dataLocalText);
+    };
+    
+
+
+    // tab view
+        const tabs = document.querySelectorAll(".tab-links li");
+        const tabContents = document.querySelectorAll(".tab");
+
+        tabs.forEach((tab, index) => {
+          tab.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Remove active class from all tabs and tab contents
+            tabs.forEach((t) => t.classList.remove("active"));
+            tabContents.forEach((content) =>
+              content.classList.remove("active")
+            );
+
+            // Add active class to clicked tab and corresponding content
+            tab.classList.add("active");
+            tabContents[index].classList.add("active");
+          });
+        });
+
+        
+        // certificate slick
+        const slickContainer = $('.certificate-slick');
+        
+        // Initialize Slick Carousel
+        slickContainer.slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 200000,
+            dots: true,
+            arrows: false,
+            centerPadding: '10px',
+            responsive: [
+            {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3 ,
+                        centerPadding: '10px'
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2 ,
+                        centerPadding: '10px'
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1, 
+                        centerPadding: '10px'
+                    }
+                }
+            ]
+        });
+
 })(jQuery);
 
